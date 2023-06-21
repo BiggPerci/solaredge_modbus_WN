@@ -507,7 +507,7 @@ class Meter(SolarEdge):
             "c_version": (0x9ce3 + self.offset, 8, registerType.HOLDING, registerDataType.STRING, str, "Version", "", 1),
             "c_serialnumber": (0x9ceb + self.offset, 16, registerType.HOLDING, registerDataType.STRING, str, "Serial", "", 1),
             "c_deviceaddress": (0x9cfb + self.offset, 1, registerType.HOLDING, registerDataType.UINT16, int, "Modbus ID", "", 1),
-            "c_sunspec_did": (0x9c85 + self.offset, 1, registerType.HOLDING, registerDataType.UINT16, int, "SunSpec DID", C_SUNSPEC_DID_MAP, 2),
+            "c_sunspec_did": (0x9cf1 + self.offset, 1, registerType.HOLDING, registerDataType.UINT16, int, "SunSpec DID", C_SUNSPEC_DID_MAP, 2),
             "c_sunspec_length": (0x9cfd + self.offset, 1, registerType.HOLDING, registerDataType.UINT16, int, "SunSpec Length", "16Bit Words", 2),
 
             "current": (0x9cfe + self.offset, 1, registerType.HOLDING, registerDataType.INT16, int, "Current", "A", 2),
