@@ -510,7 +510,7 @@ class Meter(SolarEdge):
             "c_sunspec_did": (0x9d44, 1, registerType.HOLDING, registerDataType.UINT16, int, "SunSpec DID", C_SUNSPEC_DID_MAP, 2),
             "c_sunspec_length": (0x9cba + self.offset, 1, registerType.HOLDING, registerDataType.UINT16, int, "SunSpec Length", "16Bit Words", 2),
 
-            "current": (0x9cfe + self.offset, 1, registerType.HOLDING, registerDataType.INT16, int, "Current", "A", 2),
+            "current": (0x9d89 + self.offset, 1, registerType.HOLDING, registerDataType.INT16, int, "Current", "A", 2),
             "l1_current": (0x9cff + self.offset, 1, registerType.HOLDING, registerDataType.INT16, int, "L1 Current", "A", 2),
             "l2_current": (0x9d00 + self.offset, 1, registerType.HOLDING, registerDataType.INT16, int, "L2 Current", "A", 2),
             "l3_current": (0x9d01 + self.offset, 1, registerType.HOLDING, registerDataType.INT16, int, "L3 Current", "A", 2),
