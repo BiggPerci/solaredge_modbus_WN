@@ -501,15 +501,14 @@ class Meter(SolarEdge):
 
         self.offset = METER_REGISTER_OFFSETS[offset]
         self.registers = {
-            "c_id": (0x9c40 + self.offset, 2, registerType.HOLDING, registerDataType.STRING, str, "SunSpec ID", "", 1),
             "c_manufacturer": (0x9cbb + self.offset, 16, registerType.HOLDING, registerDataType.STRING, str, "Manufacturer", "", 1),
             "c_model": (0x9ccb + self.offset, 16, registerType.HOLDING, registerDataType.STRING, str, "Model", "", 1),
             "c_option": (0x9cdb + self.offset, 8, registerType.HOLDING, registerDataType.STRING, str, "Mode", "", 1),
             "c_version": (0x9ce3 + self.offset, 8, registerType.HOLDING, registerDataType.STRING, str, "Version", "", 1),
             "c_serialnumber": (0x9ceb + self.offset, 16, registerType.HOLDING, registerDataType.STRING, str, "Serial", "", 1),
             "c_deviceaddress": (0x9cfb + self.offset, 1, registerType.HOLDING, registerDataType.UINT16, int, "Modbus ID", "", 1),
-            "c_sunspec_did": (0x9cf1 + self.offset, 1, registerType.HOLDING, registerDataType.UINT16, int, "SunSpec DID", C_SUNSPEC_DID_MAP, 2),
-            "c_sunspec_length": (0x9cfd + self.offset, 1, registerType.HOLDING, registerDataType.UINT16, int, "SunSpec Length", "16Bit Words", 2),
+            "c_sunspec_did": (0x9cb9 + self.offset, 1, registerType.HOLDING, registerDataType.UINT16, int, "SunSpec DID", C_SUNSPEC_DID_MAP, 2),
+            "c_sunspec_length": (0x9cba + self.offset, 1, registerType.HOLDING, registerDataType.UINT16, int, "SunSpec Length", "16Bit Words", 2),
 
             "current": (0x9cfe + self.offset, 1, registerType.HOLDING, registerDataType.INT16, int, "Current", "A", 2),
             "l1_current": (0x9cff + self.offset, 1, registerType.HOLDING, registerDataType.INT16, int, "L1 Current", "A", 2),
