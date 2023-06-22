@@ -501,7 +501,7 @@ class Meter(SolarEdge):
 
         self.offset = METER_REGISTER_OFFSETS[offset]
         self.registers = {
-            "c_id": (0x9c40, 2, registerType.HOLDING, registerDataType.STRING, str, "SunSpec ID", "", 1),
+            "c_id": (0x9c40 + self.offset, 2, registerType.HOLDING, registerDataType.STRING, str, "SunSpec ID", "", 1),
             "c_manufacturer": (0x9cbb + self.offset, 16, registerType.HOLDING, registerDataType.STRING, str, "Manufacturer", "", 1),
             "c_model": (0x9ccb + self.offset, 16, registerType.HOLDING, registerDataType.STRING, str, "Model", "", 1),
             "c_option": (0x9cdb + self.offset, 8, registerType.HOLDING, registerDataType.STRING, str, "Mode", "", 1),
