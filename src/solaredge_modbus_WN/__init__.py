@@ -470,7 +470,7 @@ class Inverter(SolarEdge):
         }
 
         self.meter_dids = [
-            (0x9cfc, 1, registerType.HOLDING, registerDataType.UINT16, int, "", "", 1),
+            (0x9d42, 1, registerType.HOLDING, registerDataType.UINT16, int, "", "", 1),
             (0x9daa, 1, registerType.HOLDING, registerDataType.UINT16, int, "", "", 1),
             (0x9e59, 1, registerType.HOLDING, registerDataType.UINT16, int, "", "", 1)
         ]
