@@ -126,7 +126,7 @@ BATTERY_STATUS_MAP = [
 ]
 
 METER_REGISTER_OFFSETS = [
-    0x0,
+    0x46,
     0xae,
     0x15c
 ]
